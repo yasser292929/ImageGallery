@@ -1,4 +1,4 @@
-# Item-Spinner
+# Image Gallery
 
 Image Gallery is plugin to display images based on prettyPhoto javascript library.
 
