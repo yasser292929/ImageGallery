@@ -10,7 +10,7 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
              ,FILENAME
      from your_table
   
-  Create Application Process GETFILE is process onDemand with following code:
+  Create Application Process onDemand GETFILE with following code:
   
     begin
     for c1 in (select *
