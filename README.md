@@ -4,14 +4,15 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
 
 # How to Use
 
- Create a Region
- Choose Type "Image Gallery[Plug-In]"
- In Region source enter following code:
+ 1. Create a Region
+ 2. Choose Type "Image Gallery[Plug-In]"
+    In Region source enter following code:
  
      select 'f?p=&APP_ID.:0:&APP_SESSION.:APPLICATION_PROCESS=GETFILE:::FILE_ID:'||id SHOW_IMAGE, FILENAME
      from your_table;
   
-  Application Process GETFILE is process onDemand with following code:
+  3. Application Process GETFILE is process onDemand 
+     with following code:
   
     begin
     for c1 in (select *
@@ -30,7 +31,7 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
     end loop;
     end;
     
- and FILE_ID is Application Item where we store ID of image
+  4. Application Item FILE_ID where we store ID of image
 
 # Preview
 
