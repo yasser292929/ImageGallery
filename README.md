@@ -33,4 +33,4 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
 
 # Preview
 
-![alt text](https://github.com/nhasko/ImageGallery/blob/master/preview.PNG)
+![alt text](https://github.com/nhasko/ImageGallery/blob/master/preview.gif)
