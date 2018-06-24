@@ -1,10 +1,7 @@
 {
   "name": "Image Gallery Plugin",
   "version": "1.0",
-  "description": "
-  Item Spinner is item based on JQuery UI widget spinner integrated with mousewheel features. 
-  It's allow you to enter value, choose value with click on arrows or choose your value with mousewhell functionality. 
-  The Plugin is supported for Interactive Grid too.",
+  "description": "Image Gallery is plugin to display images based on prettyPhoto javascript library.",
   "keywords": ["javascript", "jquery-ui", "Item","Spinner", "Plugin"],
   "homepage": "https://github.com/nhasko/ImageGallery",
   "bugs": {
