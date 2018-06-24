@@ -30,6 +30,25 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
     end;
     
   Create Application Item FILE_ID where we store ID of image
+  
+  
+# Options 
+
+1. Style
+
+you can choose different style of prettyPhoto image Gallery
+
+
+2. Autoplay slideshow
+
+with or without auto slideshow
+
+3. Animation speed
+
+4. Slideshow
+
+Duration of slideshow in miliseconds
+
 
 # Preview
 
