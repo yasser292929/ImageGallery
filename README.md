@@ -7,9 +7,9 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
 1. Create a Region
 2. Choose Type "Image Gallery[Plug-In]"
 3. In Region source enter following code:
-
-      select 'f?p=&APP_ID.:0:&APP_SESSION.:APPLICATION_PROCESS=GETFILE:::FILE_ID:'||id SHOW_IMAGE, FILENAME
-      from your_table
+ 
+     select 'f?p=&APP_ID.:0:&APP_SESSION.:APPLICATION_PROCESS=GETFILE:::FILE_ID:'||id SHOW_IMAGE, FILENAME
+     from your_table;
   
   Application Process GETFILE is process onDemand with following code:
   
@@ -34,4 +34,4 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
 
 # Preview
 
-![alt text](https://github.com/nhasko/Item-Spinner/blob/master/preview.PNG)
+![alt text](https://github.com/nhasko/ImageGallery/blob/master/preview.PNG)
