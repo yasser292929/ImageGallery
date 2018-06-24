@@ -1,0 +1,37 @@
+{
+  "name": "Image Gallery Plugin",
+  "version": "1.0",
+  "description": "
+  Item Spinner is item based on JQuery UI widget spinner integrated with mousewheel features. 
+  It's allow you to enter value, choose value with click on arrows or choose your value with mousewhell functionality. 
+  The Plugin is supported for Interactive Grid too.",
+  "keywords": ["javascript", "jquery-ui", "Item","Spinner", "Plugin"],
+  "homepage": "https://github.com/nhasko/ImageGallery",
+  "bugs": {
+    "url": "https://github.com/nhasko/ImageGallery/issues",
+    "email": "nhasko@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nihad Haskovic",
+    "email": "nhasko@gmail.com",
+    "url": "https://nhasko.blogspot.com",
+    "twitter": "Niho__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhasko/ImageGallery"
+  },
+  "oracle": {
+    "versions": ["11.2.0.1", "12.1.0.1", "12.2.0.1"],
+    "apex" : {
+      "versions" : ["5.0.0","5.1.0","18.1.0"],
+      "plugin" : {
+        "internalName": "IMAGE.GALLERY.DE.NHASKO",
+        "type": "item",
+        "demo": "https://apex.oracle.com/pls/apex/f?p=85112:4",
+        "previewImage": "https://raw.githubusercontent.com/nhasko/ImageGallery/master/preview.gif"
+      }
+    }
+  }
+}
