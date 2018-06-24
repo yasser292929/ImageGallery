@@ -6,7 +6,7 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
 
  1. Create a Region
  2. Choose Type "Image Gallery[Plug-In]" 
- In Region source enter following code:
+ and in Region source enter following code:
  
      select 'f?p=&APP_ID.:0:&APP_SESSION.:APPLICATION_PROCESS=GETFILE:::FILE_ID:'||id SHOW_IMAGE, FILENAME
      from your_table;
