@@ -2,13 +2,25 @@
 
 Image Gallery is plugin to display images based on prettyPhoto javascript library.
 
+# Changelog
+
+1.1 Added options for link to other page
+
+1.0 Initial Release
 # How to Use
 
   Create a Region, choose Type "Image Gallery[Plug-In]" and in Region source enter following code:
  
-     select 'f?p=&APP_ID.:0:&APP_SESSION.:APPLICATION_PROCESS=GETFILE:::FILE_ID:'||id SHOW_IMAGE
-             ,FILENAME
-     from your_table
+     select 'f?p=&APP_ID.:0:&APP_SESSION.:APPLICATION_PROCESS=GETFILE:::FILE_ID:'||your_image_id SHOW_IMAGE, 
+      your_image_name FILENAME,
+      your_image_id IMAGE_ID,
+      APEX_UTIL.PREPARE_URL(
+        p_url => 'f?p=' ||:APP_ID || ':4:'||:APP_SESSION||'::NO::P4_ID:'||your_image_id,
+        p_checksum_type => 'SESSION') IMAGE_URL
+      from your_table
+      
+      
+  Your Sql Query must have same alias as example. For IMAGE_URL you can add link to other page or set it to null.
   
   Create Application Process onDemand GETFILE with following code:
   
@@ -31,7 +43,6 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
     
   Create Application Item FILE_ID where we store ID of image
   
-  
 # Options 
 
 1. Style
@@ -48,6 +59,10 @@ with or without auto slideshow
 4. Slideshow
 
 Duration of slideshow in miliseconds
+
+5. Link icon
+
+Icon for random link
 
 
 # Preview
