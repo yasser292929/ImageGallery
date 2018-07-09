@@ -33,7 +33,7 @@ Image Gallery is plugin to display images based on prettyPhoto javascript librar
         sys.owa_util.mime_header( c1.mime_type, FALSE );
         sys.htp.p('Content-length: ' || sys.dbms_lob.getlength( c1.content));
         sys.htp.p('Content-Disposition: attachment; filename="' || c1.filename || '"' );
-        sys.htp.p('Cache-Control: max-age=3600');  -- tell the browser to cache for one hour, adjust as necessary
+        sys.htp.p('Cache-Control: no-cache');  -- tell the browser to cache for one hour, adjust as necessary
         sys.owa_util.http_header_close;
         sys.wpg_docload.download_file( c1.content );
      
