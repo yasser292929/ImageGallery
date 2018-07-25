@@ -1,6 +1,6 @@
 {
   "name": "Image Gallery Plugin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Image Gallery is plugin to display images based on prettyPhoto javascript library.",
   "keywords": ["javascript", "jquery-ui", "Item","Spinner", "Plugin"],
   "homepage": "https://github.com/nhasko/ImageGallery",
