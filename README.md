@@ -3,6 +3,8 @@
 Image Gallery is plugin to display images based on prettyPhoto javascript library.
 
 # Changelog
+1.1.2 fix for APEX 5.0 and APEX 5.1
+
 1.1.1 css fix
 
 1.1 Added options for link to other page
