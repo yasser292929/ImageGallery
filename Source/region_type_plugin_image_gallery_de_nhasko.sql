@@ -60,7 +60,7 @@ wwv_flow_api.create_plugin(
 '      l_sqldata1 := p_region.source;',
 '    end if;',
 '',
-'    l_sqldata2 := ''select * from (select sl.*, rownum RN, (select count(*) from (''||l_sqldata1||'')) RCOUNT from (''||l_sqldata1||'' order by IMAGE_ID) sl ) where RN between ''||l_min||'' and ''||l_max;',
+'    l_sqldata2 := ''select * from (select sl.*, rownum RN, (select count(*) from (''||l_sqldata1||'')) RCOUNT from (''||l_sqldata1||'' order by ID) sl ) where RN between ''||l_min||'' and ''||l_max;',
 '',
 '    apex_util.json_from_sql(',
 '      sqlq => l_sqldata2',
